@@ -1,0 +1,226 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".DockerDetail">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:id="@+id/dockerHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:background="@color/running">
+
+                <ImageView
+                    android:id="@+id/dockerIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/dockericon"/>
+
+                <TextView
+                    android:id="@+id/dockerLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Docker"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:textSize="18dp"
+                    android:layout_above="@+id/docker"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/docker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Undefined"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/apiHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/dockerHeader"
+                android:background="@color/stopped">
+
+                <ImageView
+                    android:id="@+id/apiIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/api"/>
+
+                <TextView
+                    android:id="@+id/apiLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="API"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:textSize="18dp"
+                    android:layout_above="@+id/api"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/api"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Undefined"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/osHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/apiHeader"
+                android:background="@color/images">
+
+                <ImageView
+                    android:id="@+id/osIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/os"/>
+
+                <TextView
+                    android:id="@+id/osLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OS"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:textSize="18dp"
+                    android:layout_above="@+id/os"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/os"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Undefined"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/archHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/osHeader"
+                android:background="@color/networkout">
+
+                <ImageView
+                    android:id="@+id/archIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/arch"/>
+
+                <TextView
+                    android:id="@+id/archLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Architecture"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:textSize="18dp"
+                    android:layout_above="@+id/arch"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/arch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Undefined"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/kernelHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/archHeader"
+                android:background="@color/os">
+
+                <ImageView
+                    android:id="@+id/kernelIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/cpu"/>
+
+                <TextView
+                    android:id="@+id/kernelLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kernel"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:textSize="18dp"
+                    android:layout_above="@+id/kernel"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/kernel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Undefined"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

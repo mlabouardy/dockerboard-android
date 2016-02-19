@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dockerboard</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="scan">Scan QRCode</string>
+    <string name="title_activity_containers">Containers</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_images">Images</string>
+    <string name="title_activity_container_detail">Container Information</string>
+    <string name="title_activity_docker_detail">Docker Information</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="labouardy.com.dockerboard">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+        <activity
+            android:name=".Home"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Containers"
+            android:label="@string/title_activity_containers" >
+        </activity>
+        <activity
+            android:name=".Images"
+            android:label="@string/title_activity_images" >
+        </activity>
+        <activity
+            android:name=".ContainerDetail"
+            android:label="@string/title_activity_container_detail" >
+        </activity>
+        <activity
+            android:name=".DockerDetail"
+            android:label="@string/title_activity_docker_detail" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,233 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="labouardy.com.dockerboard.ContainerDetail">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:id="@+id/imageHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:background="@color/running">
+
+                <ImageView
+                    android:id="@+id/imageIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/image"/>
+
+                <TextView
+                    android:id="@+id/imageLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Image name"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:textSize="18dp"
+                    android:layout_above="@+id/image"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Undefined"
+                    android:gravity="right"
+                    android:layout_toRightOf="@+id/imageIcon"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/memoryHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/imageHeader"
+                android:background="@color/stopped">
+
+                <ImageView
+                    android:id="@+id/memoryIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/memory"/>
+
+                <TextView
+                    android:id="@+id/memoryLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Memory"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:textSize="18dp"
+                    android:layout_above="@+id/memory"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/memory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Undefined Mb"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cpuHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/memoryHeader"
+                android:background="@color/images">
+
+                <ImageView
+                    android:id="@+id/cpuIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/cpu"/>
+
+                <TextView
+                    android:id="@+id/cpuLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CPU"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:textSize="18dp"
+                    android:layout_above="@+id/cpu"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/cpu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Undefined %"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/networkInHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/cpuHeader"
+                android:background="@color/os">
+
+                <ImageView
+                    android:id="@+id/networkInIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/networkin"/>
+
+                <TextView
+                    android:id="@+id/networkInLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Network In"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:textSize="18dp"
+                    android:layout_above="@+id/networkIn"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/networkIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Undefined Kb"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/networkOutHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/networkInHeader"
+                android:background="@color/networkout">
+
+                <ImageView
+                    android:id="@+id/networkOutIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/networkout"/>
+
+                <TextView
+                    android:id="@+id/networkOutLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Network Out"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:textSize="18dp"
+                    android:layout_above="@+id/networkOut"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/networkOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Undefined Kb"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

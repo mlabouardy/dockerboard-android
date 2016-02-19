@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/dockerHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:background="@color/images">
+
+        <ImageView
+            android:id="@+id/dockerIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/image"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/imageTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test-mdockerboard"
+            android:textColor="@color/white"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/dockerIcon"
+            android:gravity="right"
+            android:textSize="18dp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_above="@+id/tagTV"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tagTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dockerboard"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/dockerIcon"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="15dp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/tagTV"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="20dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/memory"
+                android:layout_toLeftOf="@+id/sizeTV"/>
+
+            <TextView
+                android:id="@+id/sizeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_alignParentRight="true"
+                android:text="542 Mb"
+                android:textColor="#FFF"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

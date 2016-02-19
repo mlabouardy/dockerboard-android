@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dashboard">#18A689</color>
+    <color name="white">#FFF</color>
+    <color name="running">#18A689</color>
+    <color name="stopped">#ED5565</color>
+    <color name="images">#23C6C8</color>
+    <color name="os">#F8AC59</color>
+    <color name="networkout">#FFC107</color>
+</resources>
